@@ -1,0 +1,260 @@
+/*Breytur*/
+/*Mixins*/
+/*Imports*/
+/* RESET 
+-------------*/
+@font-face {
+  font-family: avenir;
+  src: url("includes/Avenir/book.ttf"); }
+@font-face {
+  font-family: gotham;
+  src: url("includes/gotham/Gotham-Book.ttf"); }
+body, html {
+  height: 100%;
+  background-color: #fff;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Nimbus Sans','Open Sans', "Century Gothic", avenir, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+Elements
+----------------*/
+p {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 2em;
+  margin: 10px 0px; }
+
+h2 {
+  font-size: 1.5em;
+  margin: 14px 0px; }
+
+h3 {
+  font-size: 1.1em;
+  color: #999;
+  font-weight: 300;
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #FF6143; }
+
+a.hover {
+  text-decoration: none;
+  color: #D45137; }
+
+.green {
+  color: #2cc990; }
+
+/* PLACEHOLDER 
+----------------*/
+::-webkit-input-placeholder {
+  font-size: 0.8em;
+  color: #999;
+  padding: 2px 0px;
+  font-weight: medium; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 0.8em;
+  color: #999;
+  margin: 5px;
+  font-weight: medium; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 0.8em;
+  color: #999;
+  margin: 5px;
+  font-weight: medium; }
+
+:-ms-input-placeholder {
+  font-size: 0.8em;
+  color: #999;
+  margin: 5px;
+  font-weight: medium; }
+
+/* INPUTS 
+----------------*/
+input[type="text"] {
+  font-family: 'Open Sans', "Century Gothic", avenir, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-weight: thin; }
+
+.transition {
+  -webkit-transition: 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: 0.5s; }
+
+/* MEDIA 
+-------------*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  #page-wrap {
+    width: 100%; }
+
+  #header-wrap {
+    width: 100%; } }
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */ }
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */ }
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */ }
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */ }
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */ }
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */ }
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */ }
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */ }
+/* HEADER
+------------*/
+#header {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  z-index: 2; }
+  #header #header-wrap {
+    position: relative;
+    width: 1000px;
+    margin: 0px auto; }
+    @media screen and (max-width: 980px) {
+      #header #header-wrap {
+        width: 500px; } }
+  #header #logo {
+    position: relative;
+    top: 15px; }
+  #header ul {
+    list-style-type: none;
+    position: absolute;
+    top: 20px;
+    right: 20px; }
+    #header ul a {
+      color: #fff;
+      font-weight: bold; }
+  #header li {
+    display: inline;
+    margin-right: 40px; }
+    @media screen and (max-width: 980px) {
+      #header li {
+        font-size: 1.3em; } }
+
+#page-wrap {
+  position: absolute;
+  min-height: 100%;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  background-image: url("/assets/background.png");
+  background-repeat: repeat;
+  z-index: 1; }
+  #page-wrap .appstore {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    width: 150px; }
+    @media screen and (max-width: 980px) {
+      #page-wrap .appstore {
+        left: 30px;
+        top: 30px; } }
+
+#first-view {
+  position: relative;
+  width: 450px;
+  margin: 0px auto;
+  height: 100%; }
+  #first-view .hero {
+    margin-top: 100px; }
+    #first-view .hero .hero-icon {
+      width: 150px;
+      display: block;
+      margin: 0px auto;
+      margin-bottom: 60px; }
+    #first-view .hero .hero-logotext {
+      width: 300px;
+      display: block;
+      margin: 0px auto; }
+    #first-view .hero h2 {
+      color: #fff;
+      text-align: center;
+      font-weight: thin; }
+      #first-view .hero h2 .create {
+        color: #fcb34c; }
+      #first-view .hero h2 .stories {
+        color: #2cc990; }
+      #first-view .hero h2 .friends {
+        color: #fc6042; }
+  #first-view .featured-channel {
+    margin-top: 100px; }
+    #first-view .featured-channel .channel-button {
+      width: 100%;
+      height: 80px;
+      border-radius: 10px;
+      background-color: #2cc990;
+      border-bottom: 5px solid #1a7956;
+      color: #fff;
+      text-align: center; }
+      #first-view .featured-channel .channel-button h1 {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 20px; }
+    #first-view .featured-channel .channel-button:hover {
+      background-color: #27b481;
+      border-bottom: 5px solid #1a7956; }
+    #first-view .featured-channel .channel-description {
+      margin-top: 10px;
+      text-align: center;
+      color: #fff;
+      font-size: 1.4em; }
+
+.channel-info {
+  margin-top: 70px;
+  margin-bottom: 30px; }
+  .channel-info .createdby {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em; }
+  .channel-info ul {
+    width: 100%;
+    border-top: 2px solid #485866;
+    border-bottom: 2px solid #485866;
+    list-style-type: none;
+    color: #fff;
+    padding: 0; }
+  .channel-info li {
+    display: inline-block;
+    width: 222px;
+    text-align: center;
+    margin: 20px 0px; }
+    .channel-info li .info-icon {
+      height: 15px;
+      margin-bottom: 5px; }
+    .channel-info li .info-number {
+      font-size: 2em; }
+    .channel-info li .info-title {
+      font-weight: bold; }
+  .channel-info .righty {
+    border-left: 2px solid #485866;
+    margin-right: -2px; }

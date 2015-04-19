@@ -1,0 +1,103 @@
+/* RESET 
+-------------*/
+
+	@font-face
+	{
+	font-family: avenir;
+	src: url('includes/Avenir/book.ttf')
+	}
+
+	@font-face
+	{
+	font-family: gotham;
+	src: url('includes/gotham/Gotham-Book.ttf')
+	}
+
+
+	body, html {
+		height: 100%;
+		background-color: #fff;
+	  	margin: 0;
+		padding: 0;
+	}
+
+	body {
+		font-family: 'Nimbus Sans','Open Sans', "Century Gothic", avenir, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		margin: 0;
+		padding: 0;
+		-webkit-font-smoothing: antialiased;
+	}
+
+/*
+Elements
+----------------*/
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 10px 0px;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin: 14px 0px;
+}
+
+h3 {
+	font-size: 1.1em;
+	color: #999;
+	font-weight: 300;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #FF6143;
+}
+a.hover {
+	text-decoration: none;
+	color: #D45137;
+}
+
+.green {
+	color:$green;
+}
+
+
+/* PLACEHOLDER 
+----------------*/
+
+::-webkit-input-placeholder {
+  font-size:0.8em; color:#999;  padding:2px 0px; font-weight:medium;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-size:0.8em; color:#999; margin:5px; font-weight:medium;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  font-size:0.8em; color:#999; margin:5px; font-weight:medium;
+}
+
+:-ms-input-placeholder {  
+  font-size:0.8em; color:#999; margin:5px; font-weight:medium;
+}
+
+/* INPUTS 
+----------------*/
+
+input[type="text"]
+{
+   	font-family: 'Open Sans', "Century Gothic", avenir, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   	font-weight: thin;
+}
+
+.transition {
+	-webkit-transition:  0.5s; /* For Safari 3.1 to 6.0 */
+    transition:  0.5s;
+}
